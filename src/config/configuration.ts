@@ -1,5 +1,4 @@
-console.log(process.env)
-debugger;
+
 export const configuration = () => (
     {
     NODE_ENV: process.env.NODE_ENV,
@@ -8,6 +7,7 @@ export const configuration = () => (
       secret: process.env.JWT_SECRET,
       expiresIn: process.env.JWT_EXPIRES_IN,
     },
-    appName:process.env.APP_ENV
+    appName:process.env.APP_ENV,
+    DBUSERNAME:process.env.DBUSERNAME
   });
   
